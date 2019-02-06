@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<!-- Warning: this comment is an OME-XML metadata block, which contains crucial dimensional parameters and other important metadata. Please edit cautiously (if at all), and back up the original data before doing so. For more information, see the OME-TIFF web site: http://loci.wisc.edu/ome/ome-tiff.html. -->
+<OME
+Creator = "CellAtlas of HPA V0.0.0"
+UUID="urn:uuid:b3eef2d5-e035-4356-962d-e74e1e4d4464"
+xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+xmlns:OME="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd"
+
+targetNamespace="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+version="2"
+elementFormDefault="qualified">
+    <Project ID="" Name="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <ExperimenterRef ID="">{0,1}</ExperimenterRef>
+        <ExperimenterGroupRef ID="">{0,1}</ExperimenterGroupRef>
+        <DatasetRef ID="">{0,unbounded}</DatasetRef>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Project>
+
+    <Dataset ID="" Name="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <ExperimenterRef ID="">{0,1}</ExperimenterRef>
+        <ExperimenterGroupRef ID="">{0,1}</ExperimenterGroupRef>
+        <ImageRef ID="">{0,unbounded}</ImageRef>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Dataset>
+
+
+    <Folder ID="" Name="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <FolderRef ID="">{0,unbounded}</FolderRef>
+        <ImageRef ID="">{0,unbounded}</ImageRef>
+        <ROIRef ID="">{0,unbounded}</ROIRef>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Folder>
+
+
+    <Experiment ID="" Type="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <ExperimenterRef ID="">{0,1}</ExperimenterRef>
+        <MicrobeamManipulation ID="" Type="">{0,unbounded}</MicrobeamManipulation>
+    </Experiment>
+
+    <Plate ColumnNamingConvention="" Columns="" ExternalIdentifier="" FieldIndex="" ID="" Name="" RowNamingConvention="" Rows="" Status="" WellOriginX="" WellOriginXUnit="reference frame" WellOriginY="" WellOriginYUnit="reference frame" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <Well Color="-1" Column="" ExternalDescription="" ExternalIdentifier="" ID="" Row="" Type="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <WellSample ID="" Index="" PositionX="" PositionXUnit="reference frame" PositionY="" PositionYUnit="reference frame" Timepoint="">{0,unbounded}<WellSample>
+            <ReagentRef ID="">{0,1}</ReagentRef>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Well>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        <PlateAcquisition EndTime="" ID="" MaximumFieldCount="" Name="" StartTime="">{0,unbounded}</PlateAcquisition>
+    </Plate>
+
+    <Screen ID="" Name="" ProtocolDescription="" ProtocolIdentifier="" ReagentSetDescription="" ReagentSetIdentifier="" Type="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>{0,1}</Description>
+        <Reagent ID="" Name="" ReagentIdentifier="">{0,unbounded}</Reagent>
+        <PlateRef ID="">{0,unbounded}</PlateRef>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Screen>
+
+    <Experimenter Email="emma.lundberg@scilifelab.se" FirstName="emma" ID="Experimenter:0" Institution="KTH-Royal Institute of Technology" LastName="lundberg" MiddleName="" UserName="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Experimenter>
+
+    <ExperimenterGroup ID="ExperimenterGroup:0" Name="CellProfiling" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Description>Cell Profiling, KTH</Description>
+        <ExperimenterRef ID="Experimenter:0">{0,unbounded}</ExperimenterRef>
+        <Leader ID="Experimenter:0">{0,unbounded}</Leader>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </ExperimenterGroup>
+
+
+    <Instrument ID="Instrument:0"
+        <Microscope Manufacturer="Leica Microsystems" Model="DMI8" SerialNumber="462130" Type="Inverted"/>
+
+        <LightSourceGroup ID="" LotNumber="" Manufacturer="" Model="" Power="" PowerUnit="mW" SerialNumber="" LotNumber="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </LightSourceGroup>
+
+        # The Arc element is used to describe various kinds of Arc lamps - Hg, Xe, HgXe
+        <Arc ID="LightSource:0" LotNumber="" Manufacturer="" Model="" Power="" PowerUnit="mW" SerialNumber="11504116" Type="Hg" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Arc>
+
+        <Filament ID="" LotNumber="" Manufacturer="" Model="" Power="" PowerUnit="mW" SerialNumber="" Type="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Filament>
+
+        <GenericExcitationSource ID="" LotNumber="" Manufacturer="" Model="" Power="" PowerUnit="mW" SerialNumber="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Map>{0,1}</Map>
+        </GenericExcitationSource>
+
+        <Laser ID="LightSource:0" FrequencyMultiplication="" LaserMedium="" LotNumber="" Manufacturer="" Model="" PockelCell="" Power="50" PowerUnit="mW" Pulse="" RepetitionRate="" RepetitionRateUnit="Hz" SerialNumber="158002303" Tuneable="" Type="" Wavelength="405" WavelengthUnit="nm" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+          <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+          <Pump ID="">{0,1}</Pump>
+        </Laser>
+
+        <Laser ID="LightSource:1" FrequencyMultiplication="" LaserMedium="" LotNumber="" Manufacturer="" Model="" PockelCell="" Power="20" PowerUnit="mW" Pulse="" RepetitionRate="" RepetitionRateUnit="Hz" SerialNumber="158002303" Tuneable="" Type="" Wavelength="488" WavelengthUnit="nm" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+          <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+          <Pump ID="">{0,1}</Pump>
+        </Laser>
+
+        <LightEmittingDiode ID="" LotNumber="" Manufacturer="" Model="" Power="" PowerUnit="mW" SerialNumber="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </LightEmittingDiode>
+
+        <Detector AmplificationGain="" Gain="" ID="Detector:0" LotNumber="" Manufacturer="" Model="" Offset="" SerialNumber="158001390" Type="PMT" Voltage="" VoltageUnit="V" Zoom="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Detector>
+
+        <Detector AmplificationGain="" Gain="" ID="Detector:1" LotNumber="" Manufacturer="" Model="" Offset="" SerialNumber="" Type="PMT" Voltage="" VoltageUnit="V" Zoom="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Detector>
+
+        <Objective CalibratedMagnification="" Correction="PlanApo" ID="Objective:0" Immersion="Oil" Iris="" LensNA="63" LotNumber="" Manufacturer="" Model="" NominalMagnification="" SerialNumber="15506350" WorkingDistance="0.14" WorkingDistanceUnit="mm" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Objective>
+
+        <FilterSet ID="" LotNumber="" Manufacturer="" Model="" SerialNumber="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <ExcitationFilterRef ID="">{0,unbounded}</ExcitationFilterRef>
+            <DichroicRef ID="">{0,1}</DichroicRef>
+            <EmissionFilterRef ID="">{0,unbounded}</EmissionFilterRef>
+        </FilterSet>
+
+        <Filter FilterWheel="" ID="Filter:0" LotNumber="" Manufacturer="" Model="" SerialNumber="11525304" Type="BandPass" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <TransmittanceRange CutIn="553" CutInTolerance="" CutInToleranceUnit="nm" CutInUnit="nm" CutOut="625" CutOutTolerance="" CutOutToleranceUnit="nm" CutOutUnit="nm" Transmittance="">{0,1}</TransmittanceRange>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Filter>
+
+        <Dichroic ID="Dichroic:0" LotNumber="" Manufacturer="" Model="" SerialNumber="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </Dichroic>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Instrument>
+
+
+    <Image ID="" Name="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        # i.e. 1988-04-07T18:39:09.359 ISO 8601 format
+        <AcquisitionDate>{0,1}</AcquisitionDate>
+
+        <ExperimenterRef ID="">{0,1}</ExperimenterRef>
+
+        <Description>{0,1}</Description>
+
+        <ExperimentRef ID="">{0,1}</ExperimentRef>
+
+        <ExperimenterGroupRef ID="">{0,1}</ExperimenterGroupRef>
+
+        <InstrumentRef ID="">{0,1}</InstrumentRef>
+
+        <ObjectiveSettings CorrectionCollar="" ID="" Medium="" RefractiveIndex="">{0,1}</ObjectiveSettings>
+
+        <ImagingEnvironment AirPressure="" AirPressureUnit="mbar" CO2Percent="" Humidity="" Temperature="" TemperatureUnit="°C">{0,1}</ImagingEnvironment>
+
+        <StageLabel Name="" X="" XUnit="reference frame" Y="" YUnit="reference frame" Z="" ZUnit="reference frame">{0,1}</StageLabel>
+
+        <Pixels BigEndian="" DimensionOrder="" ID="" Interleaved="" PhysicalSizeX="" PhysicalSizeXUnit="µm" PhysicalSizeY="" PhysicalSizeYUnit="µm" PhysicalSizeZ="" PhysicalSizeZUnit="µm" SignificantBits="" SizeC="" SizeT="" SizeX="" SizeY="" SizeZ="" TimeIncrement="" TimeIncrementUnit="s" Type="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Channel AcquisitionMode="LaserScanningConfocalMciroscopy" Color="-1" ContrastMethod="Fluorescence" EmissionWavelength="" EmissionWavelengthUnit="nm" ExcitationWavelength="" ExcitationWavelengthUnit="nm" Fluor="" ID="Channel:0" IlluminationType="Epifluorescence" Name="" NDFilter="" PinholeSize="" PinholeSizeUnit="µm" PockelCellSetting="" SamplesPerPixel="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+                <LightSourceSettings Attenuation="" ID="" Wavelength="" WavelengthUnit="nm">{0,1}</LightSourceSettings>
+                <DetectorSettings Binning="" Gain="" ID="" Integration="" Offset="" ReadOutRate="" ReadOutRateUnit="MHz" Voltage="" VoltageUnit="V" Zoom="">{0,1}</DetectorSettings>
+                <FilterSetRef ID="">{0,1}</FilterSetRef>
+                <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+                <LightPath xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+                    <ExcitationFilterRef ID="">{0,unbounded}</ExcitationFilterRef>
+                    <DichroicRef ID="">{0,1}</DichroicRef>
+                    <EmissionFilterRef ID="">{0,unbounded}</EmissionFilterRef>
+                    <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+                </LightPath>
+            </Channel>
+            <BinData BigEndian="" Compression="none" Length="">{1,unbounded}</BinData>
+            <TiffData FirstC="0" FirstT="0" FirstZ="0" IFD="0" PlaneCount="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+                <UUID FileName="">{0,1}</UUID>
+            </TiffData>
+            <MetadataOnly>{1,1}</MetadataOnly>
+            <Plane DeltaT="" DeltaTUnit="s" ExposureTime="" ExposureTimeUnit="s" PositionX="" PositionXUnit="reference frame" PositionY="" PositionYUnit="reference frame" PositionZ="" PositionZUnit="reference frame" TheC="" TheT="" TheZ="">{0,unbounded}</Plane>
+        </Pixels>
+        <ROIRef ID="">{0,unbounded}</ROIRef>
+        <MicrobeamManipulationRef ID="">{0,unbounded}</MicrobeamManipulationRef>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+    </Image>
+
+
+    <StructuredAnnotations xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <XMLAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </XMLAnnotation>
+        <FileAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <BinaryFile FileName="" MIMEType="" Size="">{1,1}</BinaryFile>
+        </FileAnnotation>
+        <ListAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        </ListAnnotation>
+        <LongAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </LongAnnotation>
+        <DoubleAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </DoubleAnnotation>
+        <CommentAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </CommentAnnotation>
+        <BooleanAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </BooleanAnnotation>
+        <TimestampAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </TimestampAnnotation>
+
+        <TagAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </TagAnnotation>
+        <TermAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </TermAnnotation>
+        <MapAnnotation Annotator="" ID="" Namespace="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+            <Description>{0,1}</Description>
+            <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+            <Value>{1,1}</Value>
+        </MapAnnotation>
+    </StructuredAnnotations>
+
+
+    <ROI ID="" Name="" xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+        <Union>{1,1}</Union>
+        <AnnotationRef ID="">{0,unbounded}</AnnotationRef>
+        <Description>{0,1}</Description>
+    </ROI>
+
+
+    <BinaryOnly MetadataFile="" UUID=""/>
+
+
+
+SemanticTypeDefinitions
+    SemanticType
+
+CustomAttributes

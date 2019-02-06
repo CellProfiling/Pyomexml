@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<ome:OME Creator="@Hao Xu:CellAtlas of HPA V0.0.0" UUID="26fcc5f1-e3dc-4f7d-a410-e61b63ce4146" xmlns:ome="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06/xsd">
+	
+
+	<ome:Project ID="Project:0" Name="3D imaging">
+		<ome:Description>intro on the experiment</ome:Description>
+		<ome:ExperimenterRef ID="Experimenter:0"/>
+	</ome:Project>
+	<ome:Experiment/>
+	<ome:Experimenter FirstName="Martin Generation 0" ID="Experimenter:0"/>
+	<ome:Experimenter FirstName="Martin Generation 1" ID="Experimenter:1"/>
+	<ome:Experimenter FirstName="Martin Generation 2" ID="Experimenter:2"/>
+	<ome:ExperimenterGroup ID="ExperimenterGroup:0" Name="CellProfiling">
+		<ome:Description>Cell Atlas of The Human Protein Atlas</ome:Description>
+		<ome:Leader ID="Experimenter:0"/>
+	</ome:ExperimenterGroup>
+	<ome:Instrument ID="Instrument:0">
+		<ome:Microscope LotNumber="Unknown" Manufacturer="Leica Microsystems" Model="DMI8" SerialNumber="462130" Type="Inverted"/>
+		<ome:Arc ID="Arc:0" Manufacturer="Leica Microsystems" Power="mW" SerialNumber="11504116" Type="Hg"/>
+		<ome:Detector ID="Detector:0" Manufacturer="Hamamatsu" Model="Hamamatsu Flash 4.0 V3" SerialNumber="11533452" Type="CMOS"/>
+		<ome:Objective Correction="Fluotar" ID="Objective:0" Immersion="Air" LensNA="0.32" SerialNumber="11506521"/>
+		<ome:Objective/>
+		<ome:Objective/>
+		<ome:Objective/>
+		<ome:Filter ID="ExcitationFilter:DAPI" SerialNumber="11525304" Type="BandPass">
+			<ome:TransmittanceRange CutIn="325" CutInUnit="nm" CutOut="375" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="EmissionFilter:DAPI" SerialNumber="11525304" Type="BandPass">
+			<ome:TransmittanceRange CutIn="435" CutInUnit="nm" CutOut="485" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="ExcitationFilter:FITC" SerialNumber="11525307" Type="BandPass">
+			<ome:TransmittanceRange CutIn="460" CutInUnit="nm" CutOut="500" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="EmissionFilter:FITC" SerialNumber="11525307" Type="BandPass">
+			<ome:TransmittanceRange CutIn="512" CutInUnit="nm" CutOut="542" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="ExcitationFilter:RHOD" SerialNumber="11525308" Type="BandPass">
+			<ome:TransmittanceRange CutIn="541" CutInUnit="nm" CutOut="551" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="EmissionFilter:RHOD" SerialNumber="11525308" Type="BandPass">
+			<ome:TransmittanceRange CutIn="565" CutInUnit="nm" CutOut="605" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="ExcitationFilter:Y5" SerialNumber="11525312" Type="BandPass">
+			<ome:TransmittanceRange CutIn="590" CutInUnit="nm" CutOut="650" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:Filter ID="EmissionFilter:Y5" SerialNumber="11525312" Type="BandPass">
+			<ome:TransmittanceRange CutIn="663" CutInUnit="nm" CutOut="738" CutOutUnit="nm"/>
+		</ome:Filter>
+		<ome:FilterSet ID="FilterSet:DAPI" Manufacturer="Leica Microsystems" SerialNumber="11525304">
+			<ome:ExcitationFilterRef ID="ExcitationFilter:DAPI"/>
+			<ome:EmissionFilterRef ID="EmissionFilter:DAPI"/>
+			<ome:DichroicRef ID="Dichroic:DAPI"/>
+		</ome:FilterSet>
+		<ome:FilterSet ID="FilterSet:FITC" Manufacturer="Leica Microsystems" SerialNumber="11525307">
+			<ome:ExcitationFilterRef ID="ExcitationFilter:FITC"/>
+			<ome:EmissionFilterRef ID="EmissionFilter:FITC"/>
+			<ome:DichroicRef ID="Dichroic:FITC"/>
+		</ome:FilterSet>
+		<ome:FilterSet ID="FilterSet:RHOD" Manufacturer="Leica Microsystems" SerialNumber="11525308">
+			<ome:ExcitationFilterRef ID="ExcitationFilter:RHOD"/>
+			<ome:EmissionFilterRef ID="EmissionFilter:RHOD"/>
+			<ome:DichroicRef ID="Dichroic:RHOD"/>
+		</ome:FilterSet>
+		<ome:FilterSet ID="FilterSet:Y5" Manufacturer="Leica Microsystems" SerialNumber="11525312">
+			<ome:ExcitationFilterRef ID="ExcitationFilter:Y5"/>
+			<ome:EmissionFilterRef ID="EmissionFilter:Y5"/>
+			<ome:DichroicRef ID="Dichroic:Y5"/>
+		</ome:FilterSet>
+		<ome:Dichroic ID="Dichroic:DAPI" SerialNumber="11525304">400</ome:Dichroic>
+		<ome:Dichroic ID="Dichroic:FITC" SerialNumber="11525307">505</ome:Dichroic>
+		<ome:Dichroic ID="Dichroic:RHOD" SerialNumber="11525308">560</ome:Dichroic>
+		<ome:Dichroic ID="Dichroic:Y5" SerialNumber="11525312">660</ome:Dichroic>
+	</ome:Instrument>
+	<ome:Image ID="Image:0" Name="tubules.ome.tiff">
+		<ome:Description>what type is this image</ome:Description>
+		<ome:AcquisitionDate>2019-02-06T16:06:34.590941</ome:AcquisitionDate>
+		<ome:ExperimentRef ID="Experiment:0"/>
+		<ome:ExperimenterRef ID="Experimenter:0"/>
+		<ome:InstrumentRef ID="Instrument:0"/>
+		<ome:Pixels BigEndian="True" DimensionOrder="XYZCT" ID="Pixels:0">
+			<ome:Channel AcquisitionMode="Wide Field" ID="Channel:0" IlluminationType="Epifluorescence">
+				<ome:DetectorSettings Binning="2x2"/>
+				<ome:LightSourceSettings ID="Arc:0" Wavelength="Unknown"/>
+				<ome:FilterSetRef ID="FilterSet:DAPI"/>
+				<ome:LightPath>
+					<ome:ExcitationFilterRef ID="ExcitationFilter:0"/>
+				</ome:LightPath>
+			</ome:Channel>
+			<ome:Plane DeltaT="500"/>
+			<ome:Plane DeltaT="500"/>
+			<ome:Plane DeltaT="500"/>
+			<ome:Plane DeltaT="500"/>
+			<ome:Plane DeltaT="500"/>
+			<ome:TiffData FirstC="0" FirstT="0"/>
+		</ome:Pixels>
+		<ome:ROIRef ID="ROI:0"/>
+	</ome:Image>
+</ome:OME>
