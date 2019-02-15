@@ -5622,15 +5622,6 @@ class OMEXML():
         def Manufacturer(self, value):
             self.node.set("Manufacturer", value)
 
-
-        @property
-        def Model(self):
-            return self.node.get("Model")
-        @Model.setter
-        def Model(self, value):
-            self.node.set("Model", value)
-
-
         @property
         def SerialNumber(self):
             return self.node.get("SerialNumber")
