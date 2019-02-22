@@ -320,7 +320,8 @@ class OMEXML():
 
     def to_xml(self, indent="\t", newline="\n", encoding=uenc):
         '''string the xml'''
-        return str(self)
+        return ''.join(
+        ('''<?xml version="1.0" encoding="UTF-8"?>\n''', str(self)))
 
     def get_ns(self, key):
         return self.ns[key]
