@@ -15,7 +15,8 @@ This is a python interpretation for [OME-2016-06](http://www.openmicroscopy.org/
 # How to run tests
 - Make sure you go to the root directory of the repository.
 ```
-cd path/to/python-omexml_repo
+cd path/to/Pyomexml
+git checkout develop
 ```
 - Install test requirements including pytest.
 ```
