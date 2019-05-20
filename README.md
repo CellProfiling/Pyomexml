@@ -17,10 +17,6 @@ This is a python interpretation for [OME-2016-06](http://www.openmicroscopy.org/
 ```
 cd path/to/Pyomexml
 git checkout develop
-```
-- Install test requirements including pytest.
-```
 python3 -m pip install .
 ```
-
 - Read the [pytest documentation](https://docs.pytest.org/en/latest/contents.html#) for more info.
