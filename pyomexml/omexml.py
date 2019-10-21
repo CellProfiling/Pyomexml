@@ -320,7 +320,8 @@ class OMEXML():
 
     def to_xml(self, indent="\t", newline="\n", encoding=uenc):
         '''string the xml'''
-        return str(self)
+        return ''.join(
+        ('''<?xml version="1.0" encoding="UTF-8"?>\n''', str(self)))
 
     def get_ns(self, key):
         return self.ns[key]
@@ -732,6 +733,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -1116,6 +1124,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -1264,6 +1279,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -1276,6 +1298,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -1424,6 +1453,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -1436,6 +1472,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -1589,6 +1632,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -1601,6 +1651,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Type(self):
@@ -1702,6 +1759,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Type(self):
@@ -1829,6 +1893,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2059,6 +2130,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -2184,6 +2262,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -2197,6 +2282,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2346,6 +2438,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -2360,6 +2459,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2453,6 +2559,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2627,6 +2740,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -2710,6 +2830,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -2722,6 +2849,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2814,6 +2948,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -2925,6 +3066,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
 
@@ -2937,6 +3085,13 @@ class OMEXML():
         def __init__(self, node):
             self.node = node
             self.ns = get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def xmlannotation_count(self):
@@ -3257,6 +3412,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
 
@@ -3353,6 +3515,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -3447,6 +3616,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -3538,6 +3714,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def NameSpace(self):
@@ -3636,6 +3819,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -3727,6 +3917,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def NameSpace(self):
@@ -3822,6 +4019,13 @@ class OMEXML():
             self.ns = get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -3913,6 +4117,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def NameSpace(self):
@@ -4008,6 +4219,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -4101,6 +4319,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def NameSpace(self):
             return self.node.get("NameSpace")
         @NameSpace.setter
@@ -4192,6 +4417,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def NameSpace(self):
@@ -4290,6 +4522,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def Name(self):
             return self.node.get("Name")
         @Name.setter
@@ -4376,6 +4615,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def MetadataFile(self):
             return self.node.get("MetadataFile")
         @MetadataFile.setter
@@ -4402,6 +4648,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Manufacturer(self):
@@ -4473,6 +4726,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -4560,6 +4820,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -4658,6 +4925,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -4751,6 +5025,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -4942,6 +5223,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -4954,6 +5242,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -5041,6 +5336,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -5153,6 +5455,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def K(self):
             return self.node.get("K")
         @K.setter
@@ -5165,6 +5474,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Manufacturer(self):
@@ -5294,6 +5610,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def Manufacturer(self):
             return self.node.get("Manufacturer")
         @Manufacturer.setter
@@ -5419,6 +5742,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def Manufacturer(self):
             return self.node.get("Manufacturer")
         @Manufacturer.setter
@@ -5532,6 +5862,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def CutIn(self):
             return self.node.get("CutIn")
         @CutIn.setter
@@ -5608,6 +5945,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Manufacturer(self):
@@ -5731,6 +6075,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -5745,6 +6096,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -5757,6 +6115,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -5855,6 +6220,13 @@ class OMEXML():
             '''Initialize with the DOM Image node'''
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -6193,6 +6565,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -6213,6 +6592,13 @@ class OMEXML():
         def ID(self, value):
             self.node.set("ID", value)
 
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
 
     class ExperimenterGroupRef():
         def __init__(self, node):
@@ -6225,6 +6611,13 @@ class OMEXML():
         @ID.setter
         def ID(self, value):
             self.node.set("ID", value)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
 
     class InstrumentRef():
@@ -6239,7 +6632,12 @@ class OMEXML():
         def ID(self, value):
             self.node.set("ID", value)
 
-
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
     class ROIRef():
         def __init__(self, node):
@@ -6253,7 +6651,12 @@ class OMEXML():
         def ID(self, value):
             self.node.set("ID", value)
 
-
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
     class MicrobeamManipulationRef():
         def __init__(self, node):
@@ -6267,6 +6670,12 @@ class OMEXML():
         def ID(self, value):
             self.node.set("ID", value)
 
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
 
     class ObjectiveSettings():
@@ -6274,6 +6683,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -6312,6 +6728,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Temperature(self):
@@ -6391,6 +6814,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def Name(self):
             return self.node.get("Name")
         @Name.setter
@@ -6456,6 +6886,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -6772,6 +7209,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def IFD(self):
             return self.node.get("IFD")
         @IFD.setter
@@ -6839,6 +7283,12 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def FileName(self):
@@ -6853,6 +7303,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def Compression(self):
@@ -6882,6 +7339,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):
@@ -7149,6 +7613,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -7188,6 +7659,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -7200,6 +7678,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def excitationfilterref_count(self):
@@ -7302,6 +7787,13 @@ class OMEXML():
             self.ns=get_namespaces(self.node)
 
         @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
+
+        @property
         def ID(self):
             return self.node.get("ID")
         @ID.setter
@@ -7389,6 +7881,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def TheZ(self):
@@ -7565,6 +8064,13 @@ class OMEXML():
         def __init__(self, node):
             self.node=node
             self.ns=get_namespaces(self.node)
+
+        @property
+        def text(self):
+            return get_text(self.node)
+        @text.setter
+        def text(self, value):
+            set_text(self.node, str(value))
 
         @property
         def ID(self):

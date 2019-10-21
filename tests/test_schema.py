@@ -5,7 +5,7 @@ from xml.dom import minidom
 import uuid
 import pyomexml.omexml as ome
 PATH_A = os.path.abspath(
-    os.path.join('../', os.path.dirname(__file__)))
+    os.path.join(os.path.dirname(__file__), '../'))
 del sys.path[0]
 sys.path.insert(0, PATH_A)
 from tests.editor.xml_instrument import edit_instrument
