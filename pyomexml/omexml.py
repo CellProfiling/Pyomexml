@@ -4771,7 +4771,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
@@ -4865,7 +4865,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
@@ -4968,7 +4968,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
@@ -5070,7 +5070,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
@@ -5287,7 +5287,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
@@ -5381,7 +5381,7 @@ class OMEXML():
             return self.node.get("PowerUnit")
         @PowerUnit.setter
         def PowerUnit(self, value):
-            self.node.set("Power", value)
+            self.node.set("PowerUnit", value)
 
 
         @property
