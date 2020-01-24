@@ -316,6 +316,7 @@ class OMEXML():
         result = StringIO()
         ElementTree.ElementTree(
             self.root_node).write(result, encoding=uenc, method="xml")
+        print("."*30, type(result.getvalue()))
         return result.getvalue()
 
     def to_xml(self, indent="\t", newline="\n", encoding=uenc):
