@@ -16,8 +16,7 @@ from xml.etree import cElementTree as ElementTree
 import sys
 if sys.version_info.major == 3:
     from io import StringIO
-    uenc = 'utf-8'
-    #uenc = 'unicode'
+    uenc = 'unicode'
 else:
     from cStringIO import StringIO
     uenc = 'utf-8'
