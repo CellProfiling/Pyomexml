@@ -16,4 +16,3 @@ cd path/to/Pyomexml
 git checkout develop
 python3 -m pip install .
 ```
-- Read the [pytest documentation](https://docs.pytest.org/en/latest/contents.html#) for more info.
