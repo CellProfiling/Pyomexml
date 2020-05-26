@@ -9,9 +9,6 @@ This is a python interpretation for [OME-2016-06](http://www.openmicroscopy.org/
 - More docstring
 - Separate the python-omexml as standalone package for pypi-use
 
-- Lastly,
-
-
 # How to run tests
 - Make sure you go to the root directory of the repository.
 ```
